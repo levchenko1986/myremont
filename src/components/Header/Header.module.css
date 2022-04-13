@@ -1,0 +1,14 @@
+.navWrap {
+  position: relative;
+  width: 100%;
+}
+
+.navWrap:before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  right: 15px;
+  bottom: 20px;
+  border: 1px solid var(--border-color);
+}

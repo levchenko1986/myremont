@@ -1,0 +1,61 @@
+.label {
+  display: block;
+  margin: 25px 0;
+  position: relative;
+}
+
+.input {
+  position: absolute;
+  border: 1px solid transparent;
+  padding: 8px;
+  display: block;
+  width: 80%;
+  margin: 4px auto;
+  background-color: var(--input-bg-color);
+  font-size: var(--placeholder-font-size);
+  border-radius: var(--input-border-radius);
+  left: 70px;
+  top: -10px;
+  width: 37%;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%),
+    0 2px 1px rgb(0 0 0 / 20%);
+  transition: all 250ms var(--time-cubic);
+}
+
+.label:hover .input,
+.label:active .input,
+.label:focus-within .input {
+  border: 1px solid var(--hover-color);
+  color: var(--hover-color);
+  cursor: pointer;
+}
+
+.contactFormBtn {
+  position: relative;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 36px;
+  color: var(--main-color);
+  background-color: var(--input-bg-color);
+  border-radius: var(--input-border-radius);
+  font-weight: 700;
+  font-size: var(--placeholder-font-size);
+  top: -50px;
+  left: 320px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%),
+    0 2px 1px rgb(0 0 0 / 20%);
+  cursor: pointer;
+}
+
+.contactFormBtn:hover,
+.contactFormBtn:active {
+  background-image: var(--btn-hover-bg);
+  color: var(--input-bg-color);
+  transition: all 250ms var(--time-cubic);
+}
+
+.contactForm {
+  width: 650px;
+  margin-left: 233px;
+}
